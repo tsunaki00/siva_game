@@ -34,11 +34,11 @@ class Game:
   def createNetwork(self, action_size):
     # network weights
     n = 256
-    W_conv1 = self.weight_variable([56, 64, 4, 64])
+    W_conv1 = self.weight_variable([56, 64, 4, 16])
     b_conv1 = self.bias_variable([64])
     W_conv2 = self.weight_variable([28, 32, 64, 32])
     b_conv2 = self.bias_variable([32])
-    W_conv3 = self.weight_variable([7, 8, 32, 16])
+    W_conv3 = self.weight_variable([7, 8, 32, 64])
     b_conv3 = self.bias_variable([16])
     W_fc1 = self.weight_variable([n, action_size])
     b_fc1 = self.bias_variable([action_size])
