@@ -114,7 +114,7 @@ class Game:
         act_count += 1
     
       print ('Episode', episode, 'ended with score:', total_reward)
-      saver.save(sess, 'saved_networks/street_fighter_ii-dqn', global_step = episode)
+      saver.save(sess, 'saved_networks/model-dqn', global_step = episode)
       self.rle.reset_game()
 
 
